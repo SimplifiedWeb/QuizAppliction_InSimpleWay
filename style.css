@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lavender;
+}
+
+.start-screen, .score-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#start-button, #restart {
+  font-size: 1.3rem;
+  padding: 0.5rem 1.8rem;
+  border-radius: 0.2em;
+}
+
+#display-container {
+  background-color: #fff;
+  padding: 3.1em 1.8em;
+  width: 80%;
+  max-width: 37.5em;
+  position: absolute;
+  margin: 0 auto;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+#display-container .header {
+  margin-bottom: 1.8em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.6em;
+  border-bottom: 0.1em solid lightgray;
+}
+#display-container .timer-div {
+  background-color: lavender;
+  width: 7.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7em 1.8em;
+}
+#display-container #next-button {
+  font-size: 1em;
+  margin-top: 1.5em;
+  background-color: darkblue;
+  color: white;
+  padding: 0.7em 1.8em;
+  border-radius: 0.3em;
+  float: right;
+}
+#display-container .container .question {
+  margin-bottom: 1.25em;
+  font-weight: 600;
+}
+#display-container .container .option-div {
+  font-size: 0.9em;
+  width: 100%;
+  padding: 1em;
+  margin: 0.3em 0;
+  text-align: left;
+  outline: none;
+  background: transparent;
+  border: 1px solid #c0bfd2;
+  border-radius: 0.3em;
+}
+#display-container .container .option-div:disabled {
+  color: black;
+  cursor: not-allowed;
+}
+#display-container .container .incorrect {
+  background-color: #ffdde0;
+  color: red;
+  border-color: red;
+}
+#display-container .container .correct {
+  background-color: #e7f6d5;
+  color: lightgreen;
+  border-color: lightgreen;
+}
+
+.hide {
+  display: none;
+}
+
+#user-score {
+  font-size: 1.5em;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
